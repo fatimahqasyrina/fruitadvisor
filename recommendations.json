@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Lemon",
+    "id": 26,
+    "family": "Rutaceae",
+    "order": "Sapindales",
+    "genus": "Citrus",
+    "nutritions": {
+      "calories": 29,
+      "fat": 0.3,
+      "sugar": 2.5,
+      "carbohydrates": 9,
+      "protein": 1.1
+    },
+    "notes": "masaam"
+  },
+  {
+    "name": "Raspberry",
+    "id": 23,
+    "family": "Rosaceae",
+    "order": "Rosales",
+    "genus": "Rubus",
+    "nutritions": {
+      "calories": 53,
+      "fat": 0.7,
+      "sugar": 4.4,
+      "carbohydrates": 12,
+      "protein": 1.2
+    }
+  }
+]
