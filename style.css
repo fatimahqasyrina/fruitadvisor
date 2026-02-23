@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 245, 245, 0.8), rgba(255, 245, 245, 0.8)), 
+                url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1932&auto=format&fit=crop'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    justify-content: center;          
+    min-height: 100vh;               
+    width: 100%;               
+    text-align: center;         
+    transition: all 0.5s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;    
+}
+
+.main-container.has-results {
+    justify-content: flex-start; 
+    padding-top: 50px;
+}
+
+.card, .fruit-card, .summary-card {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+}
+
+h1 {
+    color: #800000;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-weight: normal;
+    color: #4a0000;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input#goalInput {
+    padding: 12px 18px;
+    width: 280px;
+    border: 2px solid #ddd;
+    border-radius: 8px; 
+    font-size: 1rem;
+    outline: none;
+    background: white;
+}
+
+input#goalInput:focus {
+    border-color: #a52a2a;
+    box-shadow: 0 0 0 3px rgba(165, 42, 42, 0.1);
+}
+
+#viewListBtn {
+    background-color: #800000; 
+    margin-top: 10px;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 50px; 
+    color: white;
+    box-shadow: 0 4px 15px rgba(128, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    width: 100%;
+    max-width: 600px; 
+    margin-top: 20px;
+}
+
+.fruit-card {
+    color: black;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    border-left: 6px solid #800000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 500px; 
+}
+
+.card-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.note-section {
+    margin-top: 15px; 
+    display: flex; 
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.note-section input {
+    flex: 1; 
+    padding: 8px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    font-size: 0.85em;
+}
+
+button {
+    background-color: #a52a2a;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.delete-btn {
+    background: #c0392b;
+    padding: 5px 10px;
+}
+
+.save-btn {
+    background: #800000;
+    white-space: nowrap;
+    padding: 8px 15px;
+}
+
+.nutri-info {
+    font-size: 0.85em; 
+    color: #444; 
+    margin: 5px 0;
+}
+
+.summary-card {
+    padding: 25px;
+    border-radius: 15px;
+    color: #333;
+    text-align: left;
+    border: 2px solid #800000;
+    max-width: 500px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.summary-title {
+    margin-top: 0;
+    color: #800000;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+#avgCal {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.sugar-text {
+    font-weight: bold; 
+    color: #e60000;
+    font-size: 1.1em;
+}
+
+h3 {
+    text-align: center;
+    color: #800000;
+}
